@@ -25,7 +25,7 @@ jobs:
           # 使用docker格式输出，兼容docker load命令
           docker buildx build \
             --platform linux/amd64 \
-            --target bolt-ai-development \
+            --target development \
             -t ${IMAGE_NAME}:${TAG} \
             --output type=docker,dest=bolt_diy_${TAG}.tar \
             .
